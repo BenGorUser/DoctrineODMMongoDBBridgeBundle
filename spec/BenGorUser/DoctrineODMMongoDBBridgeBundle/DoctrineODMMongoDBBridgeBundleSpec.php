@@ -57,7 +57,7 @@ class DoctrineODMMongoDBBridgeBundleSpec extends ObjectBehavior
             'document_managers' => [
                 'default' => [
                     'mappings' => [
-                        'BenGorUserBundle' => [
+                        'DoctrineODMMongoDBBridgeBundle' => [
                             'type'      => 'yml',
                             'is_bundle' => true,
                             'prefix'    => 'BenGor\\User\\Domain\\Model',
