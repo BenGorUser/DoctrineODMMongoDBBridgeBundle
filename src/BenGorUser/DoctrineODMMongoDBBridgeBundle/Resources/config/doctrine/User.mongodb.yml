@@ -20,6 +20,9 @@ BenGorUser\User\Domain\Model\User:
             type: user_token
         email:
             type: user_email
+        invitationToken:
+            name: invitation_token
+            type: user_token
         password:
             type: user_password
         rememberPasswordToken:
