@@ -61,7 +61,7 @@ class DoctrineODMMongoDBBridgeBundle extends Bundle
                         'DoctrineODMMongoDBBridgeBundle' => [
                             'type'      => 'yml',
                             'is_bundle' => true,
-                            'prefix'    => 'BenGor\\User\\Domain\\Model',
+                            'prefix'    => 'BenGorUser\\User\\Domain\\Model',
                         ],
                     ],
                 ],

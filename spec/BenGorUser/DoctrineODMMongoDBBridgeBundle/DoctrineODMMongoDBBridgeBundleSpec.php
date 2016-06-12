@@ -37,7 +37,7 @@ class DoctrineODMMongoDBBridgeBundleSpec extends ObjectBehavior
         $this->shouldHaveType(Bundle::class);
     }
 
-    function it_builds_without_dependendent_bundles_enabled(ContainerBuilder $container)
+    function it_builds_without_dependent_bundles_enabled(ContainerBuilder $container)
     {
         $this->shouldThrow(RuntimeException::class)->duringBuild($container);
     }
@@ -60,7 +60,7 @@ class DoctrineODMMongoDBBridgeBundleSpec extends ObjectBehavior
                         'DoctrineODMMongoDBBridgeBundle' => [
                             'type'      => 'yml',
                             'is_bundle' => true,
-                            'prefix'    => 'BenGor\\User\\Domain\\Model',
+                            'prefix'    => 'BenGorUser\\User\\Domain\\Model',
                         ],
                     ],
                 ],
