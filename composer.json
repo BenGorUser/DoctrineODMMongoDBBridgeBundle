@@ -18,8 +18,9 @@
     ],
     "require": {
         "php": "^5.5 || ^7.0",
+        "bengor-user/doctrine-odm-mongodb-bridge": "dev-master",
         "bengor-user/user-bundle": "0.6.x-dev",
-        "bengor-user/doctrine-odm-mongodb-bridge": "dev-master"
+        "doctrine/mongodb-odm-bundle": "^3.1"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^1.11",
