@@ -19,6 +19,9 @@ php:
 env:
     - COMPOSER_OPTIONS="--prefer-source"
 
+before_install:
+    - if [[ "$TRAVIS_PHP_VERSION" != "hhvm" && "$TRAVIS_PHP_VERSION" != "7.0" ]]; then echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi;
+
 install:
     - composer update --no-interaction ${COMPOSER_OPTIONS}
 
@@ -28,3 +31,9 @@ script:
 cache:
     directories:
         - $COMPOSER_CACHE_DIR
+
+matrix:
+    fast_finish: true
+    allow_failures:
+        - php: 7.0
+        - php: hhvm
