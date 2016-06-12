@@ -25,7 +25,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  *
  * @author Beñat Espiña <benatespina@gmail.com>
  */
-class DoctrineORMBridgeBundleSpec extends ObjectBehavior
+class DoctrineODMMongoDBBridgeBundleSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
