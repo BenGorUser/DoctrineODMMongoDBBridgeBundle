@@ -1,0 +1,48 @@
+{
+    "name": "bengor-user/doctrine-odm-mongodb-bridge-bundle",
+    "description": "Symfony bundle that glues UserBundle and DoctrineODMMongoDBBridge",
+    "keywords": ["user", "bundle", "symfony", "doctrine", "odm", "mongodb", "ddd"],
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Beñat Espiña Diaz",
+            "email": "benatespina@gmail.com",
+            "homepage": "http://benatespina.com"
+        },
+        {
+            "name": "Gorka Laucirica Ibarra",
+            "email": "gorka.lauzirika@gmail.com",
+            "homepage": "http://gorkalaucirica.net"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "bengor-user/user-bundle": "0.6.x-dev",
+        "bengor-user/doctrine-odm-mongodb-bridge": "dev-master"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.11",
+        "phpspec/phpspec": "^2.5"
+    },
+    "scripts": {
+        "cs": [
+            "php-cs-fixer fix --config-file=.php_cs",
+            "php-cs-fixer fix --config-file=.phpspec_cs"
+        ],
+        "test": "phpspec run"
+    },
+    "autoload": {
+        "psr-4": {
+            "BenGorUser\\DoctrineODMMongoDBBridgeBundle\\": "src/BenGorUser/DoctrineODMMongoDBBridgeBundle/"
+        },
+        "exclude-from-classmap": ["/spec/"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
